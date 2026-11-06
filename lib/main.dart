@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:my_app/containterPage.dart';
+import 'package:my_app/loginReg.dart';
+
 void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget{
-
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  @override 
-  Widget build (BuildContext context){
-
-    return MaterialApp(
-      home: ContainerPage(),
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: LoginPage(),
     );
   }
 }
